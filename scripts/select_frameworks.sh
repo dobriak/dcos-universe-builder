@@ -113,4 +113,14 @@ pushd ${HOME}/universe/docker/local-universe
 popd
 
 clear
-quit "Done.You can access your local universe's tarball at http://<your-box-ip>:${WEBPORT}/local-universe.tar.gz" 0
+echo "If you are using Vagrant you can access the local universe tarball at "
+echo ""
+echo "http://127.0.0.1:${WEBPORT}/local-universe.tar.gz"
+echo ""
+echo "To verify, compare the sha256sum of your file to "
+echo ""
+echo "http://127.0.0.1:${WEBPORT}/local-universe.tar.gz.sha256"
+echo ""
+echo "If you are using AWS replace 127.0.0.1 with the public IP of your instance (don't forget to open port ${WEBPORT} to the world)."
+
+quit "Done." 0
