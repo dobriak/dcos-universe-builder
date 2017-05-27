@@ -61,7 +61,7 @@ pushd ${HOME}/universe/repo/packages
   done
 popd
 
-dialog --visit-items --no-tags --checklist "Choose Universe Framworks:" 20 40 18 ${frameworks} 2>${ANSWERS}
+dialog --visit-items --no-tags --checklist "Choose Universe Frameworks:" 20 40 18 ${frameworks} 2>${ANSWERS}
 
 if [ ! -s ${ANSWERS} ]; then
   quit "No frameworks selected" 0
